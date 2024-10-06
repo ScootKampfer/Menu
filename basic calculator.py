@@ -33,9 +33,9 @@ def calculations():
         exit()
 
     time.sleep(3)
-    loop = input("Do you want to do another calculation? (Y/N)")
+    loop = input("Do you want to do another calculation? (y/n): ")
 
-    if input != "Y":
+    if input != "y":
         exit()
 
 while True:
