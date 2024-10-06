@@ -1,35 +1,43 @@
 import time
 
-num1 = float(input("First number: "))
-num2 = float(input("Second number: "))
-operation = input("Operation? (add, sub, mul, div, exp) ")
+def calculations():
 
-if operation == "add":
+    num1 = float(input("First number: "))
+    num2 = float(input("Second number: "))
+    operation = input("Operation? (add, sub, mul, div, exp) ")
 
-    print(f'{num1} + {num2} = {num1 + num2} ')
+    if operation == "add":
+
+        print(f'{num1} + {num2} = {num1 + num2} ')
+
+    elif operation == "sub":
+
+        print(f'{num1} - {num2} = {num1 - num2} ')
+
+    elif operation == "mul":
+
+        print(f'{num1} * {num2} = {num1 * num2} ')
+
+    elif operation == "div":
+
+        print(f'{num1} / {num2} = {num1 / num2} ')
+
+    elif operation == "exp":
+
+        print(f'{num1}**{num2} = {num1 ** num2} ')
+
+    else:
+
+        print(f"Error in operation notation! {operation} is not a valid mathematical operation for this calculator!")
+        time.sleep(3)
+        exit()
+
     time.sleep(3)
+    loop = input("Do you want to do another calculation? (Y/N)")
 
-elif operation == "sub":
+    if input != "Y":
+        exit()
 
-    print(f'{num1} - {num2} = {num1 - num2} ')
-    time.sleep(3)
+while True:
 
-elif operation == "mul":
-
-    print(f'{num1} * {num2} = {num1 * num2} ')
-    time.sleep(3)
-
-elif operation == "div":
-
-    print(f'{num1} / {num2} = {num1 / num2} ')
-    time.sleep(3)
-
-elif operation == "exp":
-
-    print(f'{num1}**{num2} = {num1 ** num2} ')
-    time.sleep(3)
-
-else:
-
-    print(f"Error in operation notation! {operation} is not a valid mathematical operation for this calculator!")
-    time.sleep(3)
+    calculations()
