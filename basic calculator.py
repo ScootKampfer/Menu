@@ -1,6 +1,6 @@
 import time
 
-def calculations():
+def calculations(): 
 
     num1 = float(input("First number: "))
     num2 = float(input("Second number: "))
