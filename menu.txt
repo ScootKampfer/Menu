@@ -1,1 +1,1 @@
-{'Big Mac': '$7.99', 'Cheeseburger': '$2.99'}
+{'Big Mac': '$7.99', 'Cheeseburger': '$2.99', 'Quarter Pounder with Cheese': '$9.00', 'Ketchup': '$0.00', 'Filet-O-Fish': '$6.59'}
