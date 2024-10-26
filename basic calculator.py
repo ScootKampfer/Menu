@@ -29,13 +29,12 @@ def calculations():
     else:
 
         print(f"Error in operation notation! {operation} is not a valid mathematical operation for this calculator!")
-        time.sleep(3)
         exit()
 
-    time.sleep(3)
     loop = input("Do you want to do another calculation? (y/n): ")
 
     if loop != "y":
+        
         exit()
 
 while True:
