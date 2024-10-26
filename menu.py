@@ -16,7 +16,7 @@ def security():
      if attempt != password:
 
           print('Your password was incorrect')
-          print(password)
+          print("Access terminated!")
           exit()
 
 def switch(ToDo):
@@ -25,6 +25,17 @@ def switch(ToDo):
 
         return menu
     
+    elif ToDo == "help":
+         
+         message = "\n The available commands are as follows: \n \n - view menu \n - quit \n"
+         return message
+
+    elif ToDo == "admin help":
+         
+         security()
+         message = "\n The available commands are as follows: \n \n - view menu \n - add item \n - remove item \n - change password \n - quit \n"
+         return message
+
     elif ToDo == "add item":
 
         security()
@@ -47,7 +58,7 @@ def switch(ToDo):
          security()
          
          global password
-         password = input("Please enter the new password")
+         password = input("Please enter the new password: ")
          Changes = open("C:\\Users\\gaben\\OneDrive\\Documents\\very fun number sequences.txt", "wt")
          Changes.write(str(password))
          Changes.close()
@@ -60,6 +71,8 @@ def switch(ToDo):
         print("Thank you for using our software.")
         exit()
         return menu
+
+print("type help for all available commands")
 
 while True:
     
