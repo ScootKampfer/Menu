@@ -1,4 +1,4 @@
-def reading():
+def menureading():
     
     PreviousMenu = eval(open('menu.txt', 'r').read())
     return PreviousMenu
@@ -11,10 +11,12 @@ def writemenu():
 
 def security():
      
+     password = open("fun number sequences.txt", 'r').read()
      attempt = input("Please input your password to gain access to admin privileges: ")
      if attempt != password:
 
           print('Your password was incorrect')
+          print(password)
           exit()
 
 def switch(ToDo):
@@ -40,12 +42,15 @@ def switch(ToDo):
         writemenu()
         return menu
     
-    elif ToDo == "Change password":
+    elif ToDo == "change password":
          
          security()
          
          global password
          password = input("Please enter the new password")
+         Changes = open("fun number sequences.txt", "wt")
+         Changes.write(str(password))
+         Changes.close()
          message = "Your password has now been changed"
          return message
     
@@ -56,11 +61,9 @@ def switch(ToDo):
         exit()
         return menu
 
-password = "6942"
-
 while True:
     
-    menu = reading()
+    menu = menureading()
     action = input("Enter action to do here: ")
     print(switch(action))
 
