@@ -9,7 +9,6 @@ def writemenu():
         FutureMenu.write(str(menu)) 
         FutureMenu.close() 
 
-
 def switch(ToDo):
 
     if ToDo == "view menu":
