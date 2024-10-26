@@ -1,1 +1,1 @@
-{'Orange Chicken': '15.00$'}
+{'Big Mac': '$7.99', 'Cheeseburger': '$2.99'}
