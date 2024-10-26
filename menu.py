@@ -5,13 +5,9 @@ def reading():
 
 def writemenu():
 
-    try: 
-        geeky_file= open('menu.txt', 'wt') 
-        geeky_file.write(str(menu)) 
-        geeky_file.close() 
-  
-    except: 
-        print("Unable to write to file")
+        FutureMenu = open('menu.txt', 'wt') 
+        FutureMenu.write(str(menu)) 
+        FutureMenu.close() 
 
 
 def switch(ToDo):
@@ -32,7 +28,7 @@ def switch(ToDo):
 
         Removal = input("What is the name of the menu item you wish to be removed? ")
         del menu[Removal]
-        writemenu(menu)
+        writemenu()
         return menu
     
     elif ToDo == "save and quit":
