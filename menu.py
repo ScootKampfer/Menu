@@ -11,7 +11,7 @@ def writemenu():
 
 def security():
      
-     password = open("fun number sequences.txt", 'r').read()
+     password = open("very fun number sequences.txt", 'r').read()
      attempt = input("Please input your password to gain access to admin privileges: ")
      if attempt != password:
 
@@ -48,7 +48,7 @@ def switch(ToDo):
          
          global password
          password = input("Please enter the new password")
-         Changes = open("fun number sequences.txt", "wt")
+         Changes = open("very fun number sequences.txt", "wt")
          Changes.write(str(password))
          Changes.close()
          message = "Your password has now been changed"
