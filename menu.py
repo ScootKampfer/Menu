@@ -89,10 +89,11 @@ def switch(ToDo):
         exit()
         return menu
 
-print("type help for all available commands")
+print("type help for all available commands \n")
 
 while True:
     
     menu = menureading()
     action = input("Enter action to do here: ")
     print(switch(action))
+    
