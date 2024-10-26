@@ -33,8 +33,25 @@ def switch(ToDo):
     elif ToDo == "admin help":
          
          security()
-         message = "\n The available commands are as follows: \n \n - view menu \n - add item \n - remove item \n - change password \n - quit \n"
+         message = "\n The available commands are as follows: \n \n - view menu \n - add item \n - clear \n - remove item \n - change password \n - quit \n"
          return message
+
+    elif ToDo == "clear":
+         
+         security()
+         areyousure = input("are you sure you want to clear the entire menu? type CLEAR if you are sure you want to clear?")
+         
+         if areyousure == "CLEAR":
+              
+              menu.clear()
+              writemenu()
+              message = "The menu has been cleared."
+              return message
+         
+         else:
+              
+              message = "Action canceled."
+              return message
 
     elif ToDo == "add item":
 
@@ -64,11 +81,11 @@ def switch(ToDo):
          Changes.close()
          message = "Your password has now been changed"
          return message
-    
+
     elif ToDo == "quit":
 
         writemenu()
-        print("Thank you for using our software.")
+        print("Thank you for using our software. Your menu has been saved.")
         exit()
         return menu
 

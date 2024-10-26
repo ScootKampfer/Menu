@@ -1,1 +1,1 @@
-{'Big Mac': '$7.99', 'Cheeseburger': '$2.99', 'Quarter Pounder with Cheese': '$9.00', 'Ketchup': '$0.00', 'Filet-O-Fish': '$6.59', 'Milk': '$1.25', 'McChicken': '$3.39', 'Fries': '$3.90', 'Poutine': '$5.99', "Liam's special sauce": '$0.30', 'Oreos': '$2.00', 'Arizona Iced Tea': '$0.99', 'Sherbrooke University Coop Double Chocolate Cookie': '$2.55'}
+{}
