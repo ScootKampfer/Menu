@@ -3,7 +3,7 @@ login = 0
 
 def menureading():
     
-    PreviousMenu = eval(open('menu.txt', 'r').read())
+    PreviousMenu = eval(open('C:\\Users\\gaben\\OneDrive\\Documents\\menu.txt', 'r').read())
     return PreviousMenu
 
 def writemenu():
