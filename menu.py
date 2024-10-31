@@ -96,8 +96,7 @@ def switch(ToDo):
 
           message = "\nThis menu item does not exist!"
           return message
-
-    
+  
     elif ToDo == "change password":
          
          lock()
