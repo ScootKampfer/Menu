@@ -4,7 +4,7 @@ login = 0
 
 def menureading():
     
-    PreviousMenu = eval(open('C:\\Users\\gaben\\OneDrive\\Documents\\menu.txt', 'r').read())
+    PreviousMenu = eval(open('menu.txt', 'r').read())
     return PreviousMenu
 
 def writemenu():
@@ -15,7 +15,7 @@ def writemenu():
 
 def security():
      
-     password = open("C:\\Users\\gaben\\OneDrive\\Documents\\very fun number sequences.txt", 'r').read()
+     password = open("very fun number sequences.txt", 'r').read()
      attempt = input("\nPlease input your password to gain access to admin privileges: \n\n")
      if attempt != password:
 
@@ -104,7 +104,7 @@ def switch(ToDo):
          
          global password
          password = input("\nPlease enter the new password:\n\n")
-         Changes = open("C:\\Users\\gaben\\OneDrive\\Documents\\very fun number sequences.txt", "wt")
+         Changes = open("very fun number sequences.txt", "wt")
          Changes.write(str(password))
          Changes.close()
          message = "\nYour password has now been changed."
