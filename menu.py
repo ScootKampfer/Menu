@@ -9,8 +9,10 @@ def menureading():
 
 def writemenu():
 
-        FutureMenu = open('menu.txt', 'wt') 
-        FutureMenu.write(str(menu)) 
+
+        FutureMenu = open('menu.txt', 'wt')
+        for i in menu.items():
+             FutureMenu.write((i))
         FutureMenu.close() 
 
 def security():
